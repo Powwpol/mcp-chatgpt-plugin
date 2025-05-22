@@ -7,7 +7,7 @@
   
   "servers": [
     {
-      "url": "https://eu2.make.com/mcp/api/v1/u"
+      "url": "https://eu2.make.com/mcp/api/v1/sse"
     }
   ],
   "paths": {
