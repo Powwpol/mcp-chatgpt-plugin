@@ -1,5 +1,5 @@
 {
-  "openapi": "3.0.1",
+  "openapi": "3.1.0",
   "info": {
     "title": "MCP Make API",
     "version": "1.0.0"
@@ -22,9 +22,10 @@
                 "type": "object",
                 "properties": {
                   "operationId": { "type": "string" },
-                  "arguments": { "type": "object" }
+                  "arguments":   { "type": "object" }
                 },
-                "required": ["operationId","arguments"]
+                "required": ["operationId", "arguments"],
+                "additionalProperties": false
               }
             }
           }
@@ -34,7 +35,10 @@
             "description": "Réponse de Make",
             "content": {
               "application/json": {
-                "schema": { "type": "object", "additionalProperties": true }
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
               }
             }
           }
