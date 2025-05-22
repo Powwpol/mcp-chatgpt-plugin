@@ -4,6 +4,7 @@
     "title": "MCP Make API",
     "version": "1.0.0"
   },
+  
   "servers": [
     {
       "url": "https://eu2.make.com/mcp/api/v1/u"
