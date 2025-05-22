@@ -1,0 +1,49 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "MCP Make API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://eu2.make.com/mcp/api/v1/u"
+    }
+  ],
+  "paths": {
+    "/run": {
+      "post": {
+        "operationId": "runScenario",
+        "summary": "Exécute un scénario Make",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "operationId": { "type": "string" },
+                  "arguments":   { "type": "object" }
+                },
+                "required": ["operationId", "arguments"],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Réponse de Make",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
