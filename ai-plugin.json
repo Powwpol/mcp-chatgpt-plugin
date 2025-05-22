@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "name_for_human": "MCP Make",
+  "name_for_model": "runScenario",
+  "description_for_human": "Appelle vos scénarios Make via MCP.",
+  "description_for_model": "Plugin pour exécuter la route /run de votre MCP Make API.",
+  "auth": {
+    "type": "service_http",
+    "authorization_type": "bearer"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://Powwpol.github.io/mcp-chatgpt-plugin/openapi.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://Powwpol.github.io/mcp-chatgpt-plugin/logo.png",
+  "contact_email": "info@bcub3.com",
+  "legal_info_url": "https://bcub3.com/legal"
+}
